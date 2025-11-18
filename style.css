@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    border: 1px solid #aaa;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+button {
+    margin: 5px;
+    padding: 7px 15px;
+}
+
+input {
+    padding: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>6402500 Sorting & Searching project </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>6402500 Sorting & Searching project</h1>
+
+<div class="box">
+    <label>จำนวนตัวเลขที่ต้องการสุ่ม:</label>
+    <input type="number" id="count" min="1">
+    <button onclick="generateNumbers()">สุ่มตัวเลข</button>
+</div>
+
+<div class="box">
+    <h3>รายการตัวเลขที่สุ่มได้:</h3>
+    <p id="numbers">-</p>
+</div>
+
+<div class="box">
+    <h3>Sorting</h3>
+    <button onclick="doBubble()">Bubble Sort</button>
+    <button onclick="doSelection()">Selection Sort</button>
+    <button onclick="doInsertion()">Insertion Sort</button>
+</div>
+
+<div class="box">
+    <h3>Searching</h3>
+    <input type="number" id="searchValue" placeholder="ค่าที่ต้องการค้นหา">
+    <button onclick="doLinear()">Linear Search</button>
+    <button onclick="doBinary()">Binary Search</button>
+</div>
+
+<div class="box">
+    <h3>ผลลัพธ์:</h3>
+    <p id="result">-</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
