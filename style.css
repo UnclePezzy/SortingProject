@@ -24,3 +24,44 @@ button {
 input {
     padding: 5px;
 }
+
+/* --------------------------
+   🟦 ส่วนเพิ่มใหม่สำหรับกรอบตัวเลขแบบ Visualization
+   -------------------------- */
+
+#visual {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+/* กล่องตัวเลข */
+#visual .num-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    min-width: 40px;
+
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 6px;
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+/* สีสถานะ (ถ้าต้องการใส่ class แทน js ก็ได้) */
+.num-compare {
+    background: yellow;
+}
+
+.num-swap {
+    background: red;
+    color: white;
+}
+
+.num-done {
+    background: lightgreen;
+}
