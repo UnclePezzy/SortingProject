@@ -2,37 +2,23 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Sorting & Searching project</title>
+    <title>Sorting & Searching Visualization</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* เผื่อคุณยังไม่มีสไตล์กรอบตัวเลข */
-        #visual div {
-            transition: 0.2s;
-        }
-    </style>
 </head>
 <body>
 
-<h1>Sorting & Searching project</h1>
+<h1>Sorting & Searching Visualization</h1>
 
 <div class="box">
     <label>จำนวนตัวเลขที่ต้องการสุ่ม:</label>
-    <input type="number" id="count" min="1">
+    <input type="number" id="count" min="1" value="10">
     <button onclick="generateNumbers()">สุ่มตัวเลข</button>
 </div>
 
 <div class="box">
-    <h3>รายการตัวเลขที่สุ่มได้:</h3>
-    <p id="numbers">-</p>
+    <h3>Visualization</h3>
+    <div id="visual"></div>
 </div>
-
-<!-- ⬇⬇⬇ เพิ่มพื้นที่แสดง visualization ตรงนี้ -->
-<div class="box">
-    <h3>Visualization:</h3>
-    <div id="visual" style="margin-top: 10px; min-height: 70px;"></div>
-</div>
-<!-- ⬆⬆⬆ เพิ่มมาใหม่ -->
 
 <div class="box">
     <h3>Sorting</h3>
@@ -54,6 +40,5 @@
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
