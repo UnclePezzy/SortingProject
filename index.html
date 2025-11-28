@@ -2,12 +2,19 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title> Sorting & Searching project </title>
+    <title>Sorting & Searching project</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* เผื่อคุณยังไม่มีสไตล์กรอบตัวเลข */
+        #visual div {
+            transition: 0.2s;
+        }
+    </style>
 </head>
 <body>
 
-<h1> Sorting & Searching project</h1>
+<h1>Sorting & Searching project</h1>
 
 <div class="box">
     <label>จำนวนตัวเลขที่ต้องการสุ่ม:</label>
@@ -19,6 +26,13 @@
     <h3>รายการตัวเลขที่สุ่มได้:</h3>
     <p id="numbers">-</p>
 </div>
+
+<!-- ⬇⬇⬇ เพิ่มพื้นที่แสดง visualization ตรงนี้ -->
+<div class="box">
+    <h3>Visualization:</h3>
+    <div id="visual" style="margin-top: 10px; min-height: 70px;"></div>
+</div>
+<!-- ⬆⬆⬆ เพิ่มมาใหม่ -->
 
 <div class="box">
     <h3>Sorting</h3>
@@ -43,4 +57,3 @@
 
 </body>
 </html>
-
